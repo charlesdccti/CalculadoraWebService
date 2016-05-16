@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculadoraWebService</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_calcular">Calcular</string>
+    <string name="lbl_resultado">Resultado: 0</string>
+    <string name="lbl_valor1">Valor 1</string>
+    <string name="lbl_valor2">Valor 2</string>
+</resources>
