@@ -20,13 +20,13 @@ public class CalculadoraWS {
 
     public String somar( Integer op1, Integer op2) throws XmlPullParserException, IOException {
 
-        SoapObject soap = new SoapObject("ttp://default_package/", "somar");
+        SoapObject soap = new SoapObject("http://default_package/", "somar");
         soap.addProperty("op1", op1);
         soap.addProperty("op2", op2);
 
 
 
-        SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+        SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER10);
 
         HttpTransportSE httpTrans = new HttpTransportSE("http://192.168.1.101:8080/CalculadoraSoup/services/CalculadoraPort?wsdl");
 
